@@ -21,17 +21,26 @@ function addToCart() {
         rowC[choice] = cRow;
         cRow++;
 
+        var qChoose = "q" + choice;
+        var pChoose = "p" + choice;
+        document.getElementById(qChoose).value = quantities[choice];
+        document.getElementById(pChoose).value = "$" + prices[choice] * quantities[choice];
+
         name.innerHTML = choices[choice];
-        count.innerHTML = quantities[choice];
-        cost.innerHTML = "$" + prices[choice] * quantities[choice]
+        count.innerHTML = qChoose + ".value";
+        cost.innerHTML = pChoose + ".value";
 
     }
     else {
 
         alert("Item Already Entered!");
-        //document.getElementById("shopList").innerHTML.getElementById("name").innerHTML = choices[choice];
-        //document.getElementById("shopList").getElementById("count").innerHTML = quantities[choice];
-        //document.getElementById("shopList").getElementById("sub").innerHTML = "$" + prices[choice] * quantities[choice];
+
+        quantities[choice] = quantities[choice] + quantity;
+
+        var qChoose = "q" + choice;
+        var pChoose = "p" + choice;
+        document.getElementById(qChoose).value = quantities[choice];
+        document.getElementById(pChoose).value = "$" + prices[choice] * quantities[choice];
 
     }
     var out = 0;

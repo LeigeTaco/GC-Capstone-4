@@ -6,15 +6,6 @@
     <script src="code.js" async></script>
 </head>
 <body>
-    <table border="1" id="shopList">
-        <tr>
-            <th id="name">Item Name</th>
-            <th id="count">Quantity</th>
-            <th id="sub">Cost</th>
-        </tr>
-    </table>
-    <p id="subtotal"></p><br /><br />
-
     <select id="choice">
         <option value="0">Coke $2.00</option>
         <option value="1">Pepsi $2.00</option>
@@ -24,5 +15,18 @@
     </select>
     Quantity: <input type="number" id="quantity" /><br />
     <button onclick="addToCart()">Add To Cart</button><br /><br />
+    <table border="1" id="shopList">
+        <tr>
+            <th id="name">Item Name</th>
+            <th id="count">Quantity</th>
+            <th id="sub">Cost</th>
+        </tr>
+    </table>
+    <p id="subtotal"></p><br /><br />
+    <input type="number" id="q0"  /><input type="text" id="p0" /><br />
+    <input type="number" id="q1"  /><input type="text" id="p1" /><br />
+    <input type="number" id="q2"  /><input type="text" id="p2" /><br />
+    <input type="number" id="q3"  /><input type="text" id="p3" /><br />
+    <input type="number" id="q4"  /><input type="text" id="p4" /><br />
 </body>
 </html>

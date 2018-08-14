@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Capstone 4</title>
+    <script src="code.js" async></script>
+</head>
+<body>
+    <table border="1" id="shopList">
+        <tr>
+            <th id="name">Item Name</th>
+            <th id="count">Quantity</th>
+            <th id="sub">Cost</th>
+        </tr>
+    </table>
+    <p id="subtotal"></p><br /><br />
+
+    <select id="choice">
+        <option value="0">Coke $2.00</option>
+        <option value="1">Pepsi $2.00</option>
+        <option value="2">Royal Crown $1.50</option>
+        <option value="3">Ubuntu $3.00</option>
+        <option value="4">Shinola $2.50</option>
+    </select>
+    Quantity: <input type="number" id="quantity" /><br />
+    <button onclick="addToCart()">Add To Cart</button><br /><br />
+</body>
+</html>
